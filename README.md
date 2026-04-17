@@ -1,16 +1,34 @@
-# React + Vite
+# TaskMaster - My Todo List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I built this todo list app as part of my React assignment. It took me a while but finally got it working!
 
-Currently, two official plugins are available:
+GitHub Repo: https://github.com/harshcloud3/Todo--App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What I learned
 
-## React Compiler
+This was my first time using React hooks like useState. The edit functionality was tricky but I figured it out by passing functions as props between components.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features I added
 
-## Expanding the ESLint configuration
+- Add new tasks (had to handle empty input validation)
+- Delete tasks when you don't need them anymore
+- Mark tasks as complete with a checkbox
+- Edit tasks (this was the hardest part)
+- Shows total tasks and how many are completed
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How I built it
+
+I used Vite to create the project because the assignment required it. The components are:
+
+- App.jsx - manages all the state
+- Header.jsx - just the title section
+- ToDoList.jsx - renders the list using map()
+- ToDoItem.jsx - each individual task with its buttons
+
+## Running the project
+
+Open your terminal and run:
+
+''''terminal
+npm install
+npm run dev
