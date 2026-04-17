@@ -1,4 +1,4 @@
-
+// Using map to render todos
 import React, { useState } from 'react';
 import ToDoItem from './ToDoItem';
 
